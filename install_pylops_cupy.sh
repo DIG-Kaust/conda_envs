@@ -13,7 +13,7 @@ module load cuda/11.1.0/gcc-7.5.0-4dnx5cr
 echo 'Loaded cuda:' $(which nvcc)
 
 # create conda env
-conda env create -f environment_pylops_cupy.yml --yes
+conda env create -f environment_pylops_cupy.yml
 source activate pylops_cupy
 echo 'Created and activated environment:' $(which python)
 

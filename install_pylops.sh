@@ -9,7 +9,7 @@
 echo 'Creating PyLops CPU environment'
 
 # create conda env
-conda env create -f environment_pylops.yml --yes
+conda env create -f environment_pylops.yml
 source activate pylops
 echo 'Created and activated environment:' $(which python)
 

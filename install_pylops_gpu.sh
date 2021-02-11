@@ -14,7 +14,7 @@ echo 'Loaded cuda:' $(which nvcc) $(which nvcc)
 echo $CUDA_HOME
 
 # create conda env
-conda env create -f environment_pylops_gpu.yml --yes
+conda env create -f environment_pylops_gpu.yml
 source activate pylops_gpu
 echo 'Created and activated environment:' $(which python)
 
