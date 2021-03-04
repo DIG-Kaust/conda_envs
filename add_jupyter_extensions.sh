@@ -10,7 +10,10 @@ CONDAENV=$1
 echo "Adding jupyter notebook extensions to $CONDAENV environment"
 
 # Source conda env
-source activate $CONDAENV
+source ~/miniconda3/etc/profile.d/conda.sh
+conda activate ${CONDAENV}
+conda env list
+echo 'Loaded environment:' $(which python)
 
 # Install extension
 conda install -c conda-forge jupyter_contrib_nbextensions jupyter_nbextensions_configurator

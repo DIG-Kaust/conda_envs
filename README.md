@@ -16,14 +16,17 @@ where `$PATH_TO_DEV_LIB` contains the path of the library to install in develope
 
 ## Environments
 
+- Scientific: CPU installation of basic scientific stack (customize this to your needs)
 - PyLops: CPU installation of PyLops and its dependencies
 - PyLops_36: CPU installation of PyLops and its dependencies
 - PyLops_37: CPU installation of PyLops and its dependencies
 - PyLops_cupy: GPU-enabled installation of PyLops with Cupy (cuda11.1.0)
 - PyLops_cupy_cusignal: GPU-enabled installation of PyLops with Cupy + CuSignal (cuda10.2.89)
 - PyLops_gpu: GPU-enabled installation of PyLops-gpu with PyTorch + Cupy (cuda10.2.89)
+- PyLops_gpu: GPU-enabled installation of PyLops-gpu with PyTorch + Cupy (cuda11.0 to be used with GeForce RTX 3090)
 - EGS: Stanford GPU-enabled FD propagators and PDE-constrained inversion
 
 ## Adds on:
 
+- Jupyter Extensions: install Jupyter extensions (e.g., TOC)
 - Curvelops: install FFWT, Curvelab and Curvelops (works only with PyLops_36 and PyLops_37)

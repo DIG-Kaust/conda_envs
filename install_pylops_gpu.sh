@@ -1,6 +1,6 @@
 #!/bin/bash
 # 
-# Installer for PyLops GPU environment with Pytorch+Cupy_cupy_cupy and CUDA 10.2
+# Installer for PyLops GPU environment with Pytorch+Cupy+PyTorch and CUDA 10.2
 # 
 # Run: ./install_pylops_gpu.sh pylops-gpu_dir
 # 
@@ -8,14 +8,11 @@
 
 echo 'Creating PyLops GPU environment with Pytorch and CUDA 10.2'
 
-# load module cuda 10.2
-module load cuda/10.2.89/gcc-7.5.0-jr6kobf
-echo 'Loaded cuda:' $(which nvcc) $(which nvcc)
-echo $CUDA_HOME
-
 # create conda env
 conda env create -f environment_pylops_gpu.yml
-source activate pylops_gpu
+source ~/miniconda3/etc/profile.d/conda.sh
+conda activate pylops_gpu
+conda env list
 echo 'Created and activated environment:' $(which python)
 
 # install pylops-gpu in developer mode
