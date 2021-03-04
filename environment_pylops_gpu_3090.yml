@@ -1,0 +1,35 @@
+name: pylops_gpu_3090
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  - python>=3.6.4
+  - numpy>=1.15.0
+  - scipy>=1.4.0
+  - cudatoolkit=11.0 
+  - scikit-learn 
+  - pandas
+  - pylops
+  - matplotlib
+  - ipython
+  - jupyter
+  - pytorch
+  - torchvision
+  - torchaudio
+  - pytest
+  - Sphinx
+  - numpydoc
+  - tqdm 
+  - pip:
+    - spgl1
+    - pytorch-complex-tensor
+    - cupy-cuda110
+    - pytest-runner
+    - setuptools_scm
+    - sphinx-rtd-theme
+    - sphinx-gallery
+    - nbsphinx
+    - image
+    - torchsummary
+    - torchviz
