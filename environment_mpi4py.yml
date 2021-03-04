@@ -1,0 +1,18 @@
+name: mpi4py
+channels:
+  - defaults
+  - anaconda
+  - conda-forge
+  - numba
+dependencies:
+  - python>=3.6.4
+  - numpy>=1.15.0
+  - scipy>=1.4.0
+  - pylops
+  - matplotlib
+  - ipython
+  - jupyter
+  - ipyparallel 
+  - numba
+  - icc_rt
+  - mpi4py 

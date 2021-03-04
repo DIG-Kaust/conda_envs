@@ -17,6 +17,7 @@ where `$PATH_TO_DEV_LIB` contains the path of the library to install in develope
 ## Environments
 
 - Scientific: CPU installation of basic scientific stack (customize this to your needs)
+- MPI4PY: CPU installation of basic scientific stack with MPI4Py
 - PyLops: CPU installation of PyLops and its dependencies
 - PyLops_36: CPU installation of PyLops and its dependencies
 - PyLops_37: CPU installation of PyLops and its dependencies
