@@ -24,7 +24,7 @@ where `$PATH_TO_DEV_LIB` contains the path of the library to install in develope
 - PyLops_cupy: GPU-enabled installation of PyLops with Cupy (cuda11.1.0)
 - PyLops_cupy_cusignal: GPU-enabled installation of PyLops with Cupy + CuSignal (cuda10.2.89)
 - PyLops_gpu: GPU-enabled installation of PyLops-gpu with PyTorch + Cupy (cuda10.2.89)
-- PyLops_gpu: GPU-enabled installation of PyLops-gpu with PyTorch + Cupy (cuda11.0 to be used with GeForce RTX 3090)
+- PyLops_gpu_3090: GPU-enabled installation of PyLops-gpu with PyTorch + Cupy (cuda11.0 to be used with GeForce RTX 3090)
 - EGS: Stanford GPU-enabled FD propagators and PDE-constrained inversion
 
 ## Adds on:
