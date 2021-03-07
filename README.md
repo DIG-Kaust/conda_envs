@@ -3,7 +3,7 @@ Set of conda environments for KAUST linux machines and clusters at KAUST.
 
 First of all install Miniconda following instructions at: `https://github.com/kaust-rccl/ibex-miniconda-install` 
 
-For each environment, an `environment_$ENVNAME.yml` file is provided alonside with a
+For each environment, an `environment_$ENVNAME.yml` file is provided alongside with a
 shell installation script  `install_$ENVNAME.sh`. 
 
 Simply run:
