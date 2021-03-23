@@ -27,7 +27,8 @@ unset CONDA_ALWAYS_YES
 # install pylops in developer mode
 if [ -z "$1" ];
 then
-   echo 'No library installed in dev mode...'
+   echo 'No library installed in dev mode... Installing pylops from conda'
+   conda install -c conda-forge pylops
 else
    cd $1
    pip install -e .

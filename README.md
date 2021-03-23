@@ -11,7 +11,7 @@ Simply run:
 ./install_$ENVNAME.sh $PATH_TO_DEV_LIB
 ```
 where `$PATH_TO_DEV_LIB` contains the path of the library to install in developer mode 
-(if empty, no library will be installed in developer model).
+(if empty, the library will be installed in user mode using pip or conda installers).
 
 
 ## Environments

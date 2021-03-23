@@ -16,7 +16,8 @@ echo 'Created and activated environment:' $(which python)
 # install pylops-distributed in developer mode
 if [ -z "$1" ];
 then
-   echo 'No library installed in dev mode...'
+   echo 'No library installed in dev mode... Installing pylops from conda'
+   pip install pylops-distributed
 else
    cd $1
    pip install -e .

@@ -18,7 +18,8 @@ echo 'Created and activated environment:' $(which python)
 # install pylops-gpu in developer mode
 if [ -z "$1" ];
 then
-   echo 'No library installed in dev mode...'
+   echo 'No library installed in dev mode... Installing pylops from conda'
+   pip install pylops-gpu
 else
    cd $1
    pip install -e .
