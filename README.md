@@ -17,6 +17,7 @@ where `$PATH_TO_DEV_LIB` contains the path of the library to install in develope
 ## Environments
 
 - Scientific: CPU installation of basic scientific stack (customize this to your needs)
+- Azure_CLI: CPU installation of azure-cli (to be able to programmatically download Volve data)
 - MPI4PY: CPU installation of basic scientific stack with MPI4Py
 - PyLops: CPU installation of PyLops and its dependencies
 - PyLops_36: CPU installation of PyLops and its dependencies
@@ -26,7 +27,7 @@ where `$PATH_TO_DEV_LIB` contains the path of the library to install in develope
 - PyLops_gpu: GPU-enabled installation of PyLops-gpu with PyTorch + Cupy (cuda10.2.89)
 - PyLops_gpu_3090: GPU-enabled installation of PyLops-gpu with PyTorch + Cupy (cuda11.0 to be used with GeForce RTX 3090)
 - PyLops_dist: CPU installation of PyLops-distributed and its dependencies
-- Azure_CLI: CPU installation of azure-cli (to be able to programmatically download Volve data)
+- Devito: CPU installation of Devito
 - EGS: Stanford GPU-enabled FD propagators and PDE-constrained inversion
 
 ## Adds on:
