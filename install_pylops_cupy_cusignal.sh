@@ -16,7 +16,8 @@ echo $CUDA_HOME
 # create conda env
 export CONDA_ALWAYS_YES="true"
 conda env create -f environment_pylops_cupy_cusignal.yml
-source activate pylops_cupy_cusignal
+source ~/miniconda3/etc/profile.d/conda.sh
+conda activate pylops_cupy_cusignal
 echo 'Created and activated environment:' $(which python)
 
 # install cusignal

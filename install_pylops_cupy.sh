@@ -14,7 +14,8 @@ echo 'Loaded cuda:' $(which nvcc)
 
 # create conda env
 conda env create -f environment_pylops_cupy.yml
-source activate pylops_cupy
+source ~/miniconda3/etc/profile.d/conda.sh
+conda activate pylops_cupy
 echo 'Created and activated environment:' $(which python)
 
 # install pylops in developer mode
