@@ -5,6 +5,7 @@ channels:
   - numba
 dependencies:
   - python>=3.6.4
+  - pip
   - ipython
   - pip:
     - azure-cli
