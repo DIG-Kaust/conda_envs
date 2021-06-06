@@ -37,7 +37,7 @@ cd ..
 # install Python env
 conda env create -f environment_pylops_37.yml
 source ~/miniconda3/etc/profile.d/conda.sh
-source activate pylops_37
+conda activate pylops_37
 echo 'Created and activated environment:' $(which python)
 
 # option1: install curvelops from github

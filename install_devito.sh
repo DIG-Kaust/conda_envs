@@ -10,7 +10,8 @@ echo 'Creating Devito CPU environment'
 
 # create conda env
 conda env create -f environment_devito.yml
-source activate devito
+source ~/miniconda3/etc/profile.d/conda.sh
+conda activate devito
 echo 'Created and activated environment:' $(which python)
 
 # install devito

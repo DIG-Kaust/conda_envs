@@ -10,7 +10,8 @@ echo 'Creating Scientific CPU environment'
 
 # create conda env
 conda env create -f environment_scientific.yml
-source activate scientific
+source ~/miniconda3/etc/profile.d/conda.sh
+conda activate scientific
 echo 'Created and activated environment:' $(which python)
 
 # check packages work as expected

@@ -10,7 +10,8 @@ echo 'Creating PyLops CPU environment (Python 3.7)'
 
 # create conda env
 conda env create -f environment_pylops_37.yml
-source activate pylops_37
+source ~/miniconda3/etc/profile.d/conda.sh
+conda activate pylops_37
 echo 'Created and activated environment:' $(which python)
 
 # install pylops in developer mode

@@ -10,7 +10,8 @@ echo 'Creating PyLops Distributed CPU environment'
 
 # create conda env
 conda env create -f environment_pylops_distr.yml
-source activate pylops_distributed
+source ~/miniconda3/etc/profile.d/conda.sh
+conda activate pylops_distributed
 echo 'Created and activated environment:' $(which python)
 
 # install pylops-distributed in developer mode
