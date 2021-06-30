@@ -1,0 +1,24 @@
+name: pytorch_gpu
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  - python>=3.6.4
+  - pip
+  - numpy>=1.15.0
+  - scipy>=1.4.0
+  - cudatoolkit=10.2 
+  - scikit-learn 
+  - pandas
+  - matplotlib
+  - ipython
+  - jupyter
+  - pytorch
+  - torchvision
+  - torchaudio
+  - tqdm 
+  - pip:
+    - image
+    - torchsummary
+    - torchviz
