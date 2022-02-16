@@ -6,7 +6,12 @@
 # 
 # M. Ravasi, 04/03/2021
 
-echo 'Creating PyLops GPU environment with Pytorch and CUDA 11.0'
+echo 'Creating PyLops GPU environment with Pytorch and CUDA 11.3'
+
+# load module cuda 11.0
+module load cuda/11.1.0/gcc-7.5.0-4dnx5cr
+echo 'Loaded cuda:' $(which nvcc) $(which nvcc)
+echo $CUDA_HOME
 
 # create conda env
 conda env create -f environment_pylops_gpu_3090.yml
