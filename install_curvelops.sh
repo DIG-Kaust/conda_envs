@@ -27,7 +27,7 @@ cd ..
 
 # install CurveLab (do steps 1 and 2 before running this script!)
 # 1. Download it from http://www.curvelet.org/ (needs to register...)
-# 2. Change CC AND CXX in makefile.opt
+# 2. Change CC, CXX and FFTW_DIR in makefile.opt
 cd CurveLab-2.1.3
 make clean
 make lib
@@ -37,7 +37,7 @@ cd ..
 # install Python env
 conda env create -f environment_pylops_37.yml
 source ~/miniconda3/etc/profile.d/conda.sh
-conda activate pylops_37
+source activate pylops_37
 echo 'Created and activated environment:' $(which python)
 
 # option1: install curvelops from github
