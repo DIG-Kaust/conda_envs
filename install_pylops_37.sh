@@ -18,7 +18,7 @@ echo 'Created and activated environment:' $(which python)
 if [ -z "$1" ];
 then
    echo 'No library installed in dev mode... Installing pylops from conda'
-   conda install -c conda-forge pylops
+   conda install -c conda-forge pylops=1.15.0
 else
    cd $1
    pip install -e .

@@ -40,6 +40,9 @@ source ~/miniconda3/etc/profile.d/conda.sh
 source activate pylops_37
 echo 'Created and activated environment:' $(which python)
 
+# install pylops=1.15.0 (last version supporting python 3.7)
+conda install -c conda-forge pylops=1.15.0
+
 # option1: install curvelops from github
 export FFTW=${PWD}/fftw-2.1.5
 export FDCT=${PWD}/CurveLab-2.1.3
