@@ -8,7 +8,7 @@
 
 echo 'Creating PyLops GPU environment'
 
-# load module cuda 11.0
+# load module cuda 11.5
 module load cuda/11.5.0/gcc-7.5.0-syen6pj
 echo 'Loaded cuda:' $(which nvcc) $(which nvcc)
 echo $CUDA_HOME

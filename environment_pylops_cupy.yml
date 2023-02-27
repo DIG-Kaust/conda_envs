@@ -21,7 +21,7 @@ dependencies:
   - pip:
     - scikit-fmm
     - spgl1
-    - cupy-cuda111
+    - cupy-cuda115
     - pytest-runner
     - setuptools_scm
     - sphinx-rtd-theme

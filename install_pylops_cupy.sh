@@ -1,6 +1,6 @@
 #!/bin/bash
 # 
-# Installer for PyLops GPU environment with Cupy and CUDA 11.1
+# Installer for PyLops GPU environment with Cupy and CUDA 11.5
 #
 # Run: ./install_pylops_cupy.sh pylops_dir
 # 
@@ -8,9 +8,10 @@
 
 echo 'Creating PyLops GPU environment'
 
-# load module cuda 11.1
-module load cuda/11.1.0/gcc-7.5.0-4dnx5cr
-echo 'Loaded cuda:' $(which nvcc)
+# load module cuda 11.5
+module load cuda/11.5.0/gcc-7.5.0-syen6pj
+echo 'Loaded cuda:' $(which nvcc) $(which nvcc)
+echo $CUDA_HOME
 
 # create conda env
 conda env create -f environment_pylops_cupy.yml
