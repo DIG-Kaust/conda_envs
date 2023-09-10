@@ -1,15 +1,17 @@
 name: pylops_cupy_cusignal_3090
 channels:
-  - defaults
+  - rapidsai
   - conda-forge
+  - nvidia
   - numba
+  - defaults
 dependencies:
-  - python>=3.8
+  - python=3.9
   - pip
-  - numba==0.55.2
-  - icc_rt
   - numpy
   - scipy>=1.4.0
+  - numba
+  - icc_rt
   - pyfftw
   - pywavelets
   - matplotlib
