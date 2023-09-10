@@ -10,6 +10,9 @@ dependencies:
   - pip
   - numpy
   - scipy>=1.4.0
+  - cupy
+  - cuda-version=11.4
+  - cusignal
   - numba
   - icc_rt
   - pyfftw

@@ -20,11 +20,6 @@ source ~/miniconda3/etc/profile.d/conda.sh
 conda activate pylops_cupy_cusignal_3090
 echo 'Created and activated environment:' $(which python)
 
-# install cupy and cusignal
-conda install -c conda-forge cupy cuda-version=11.5 -y
-conda install -c rapidsai -c nvidia -c conda-forge cusignal -y
-unset CONDA_ALWAYS_YES
-
 # install pylops in developer mode
 if [ -z "$1" ];
 then
