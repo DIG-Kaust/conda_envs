@@ -1,15 +1,15 @@
 #!/bin/bash
 # 
-# Installer for PyLops GPU environment with Pytorch+Cupy+PyTorch and CUDA 11.0
+# Installer for PyLops GPU environment with PyTorch+Cupy and CUDA 11.5
 # 
 # Run: ./install_pylops_gpu_3090.sh pylops-gpu_dir
 # 
 # M. Ravasi, 04/03/2021
 
-echo 'Creating PyLops GPU environment with Pytorch and CUDA 11.3'
+echo 'Creating PyLops GPU environment with PyTorch+Cupy and CUDA 11.5'
 
-# load module cuda 11.0
-module load cuda/11.1.0/gcc-7.5.0-4dnx5cr
+# load module cuda 11.5
+module load cuda/11.5.0/gcc-7.5.0-syen6pj
 echo 'Loaded cuda:' $(which nvcc) $(which nvcc)
 echo $CUDA_HOME
 

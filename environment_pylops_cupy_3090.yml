@@ -1,0 +1,24 @@
+name: pylops_cupy_3090
+channels:
+  - rapidsai
+  - conda-forge
+  - nvidia
+  - numba
+  - defaults
+dependencies:
+  - python=3.9
+  - pip
+  - numpy
+  - scipy>=1.4.0
+  - cupy==13.1.0
+  - cuda-version==11.8
+  - numba
+  - icc_rt
+  - pyfftw
+  - pywavelets
+  - matplotlib
+  - ipython
+  - jupyter
+  - pip:
+    - scikit-fmm
+    - spgl1

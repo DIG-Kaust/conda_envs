@@ -16,7 +16,7 @@ conda env list
 echo 'Created and activated environment:' $(which python)
 
 # check cupy works as expected
-echo 'Checking cupy version and running a command...'
+echo 'Checking torch version and running a command...'
 python -c 'import torch; print(torch.__version__);  print(torch.cuda.get_device_name(torch.cuda.current_device())); print(torch.ones(10).to("cuda"))'
 
 echo 'Done!'
